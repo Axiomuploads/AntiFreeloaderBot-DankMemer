@@ -14,12 +14,7 @@ const client = new Client({
 let currentStatusIndex = 0;
 
 client.once('ready', () => {
-      console.log(` ╭╌╌╌  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`.bold.brightGreen)
-      console.log(` │      ┃ `.bold.brightGreen + `${client.user.tag} is online!`.bold.brightGreen + " ".repeat(-1+stringlength-` ┃ `.length-`The discord app is online!`.length)+ "┃".bold.brightGreen)
-      console.log(` │      ┃ `.bold.brightGreen + ` /--/ ${client.user.tag} /--/ `.bold.brightGreen+ " ".repeat(-1+stringlength-` ┃ `.length-` /--/ ${client.user.tag} /--/ `.length)+ "┃".bold.brightGreen)
-      console.log(` │      ┃ `.bold.brightGreen + " ".repeat(-1+stringlength-` ┃ `.length)+ "┃".bold.brightGreen)
-      console.log(` ╰╌╌╌  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`.bold.brightGreen) 
-  updateStatus();
+       updateStatus();
   setInterval(updateStatus, 5000); // Rotate status every 5 seconds
 });
 
