@@ -1,0 +1,7 @@
+{
+  "token": "YOUR_DISCORD_BOT_TOKEN",
+  "prefix": "your_prefered_prefix",
+  "logChannelId": "LOG_CHANNEL_ID",
+  "antifreeloaderEnabled": true,
+  "ownerId": "YOUR_DISCORD_USER_ID"
+}
